@@ -1,10 +1,12 @@
 import React from 'react'
 import Hero from '../sections/Hero'
+import WhatWeDo from '../sections/WhatWeDo'
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Hero/>
+      <WhatWeDo/>
     </div>
   )
 }
