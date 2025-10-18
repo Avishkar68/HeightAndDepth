@@ -6,6 +6,7 @@ import Gallery from "./pages/Gallery";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Layout from "./Layout";
+import './index.css'
 
 
 const App = () => {
