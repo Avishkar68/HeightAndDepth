@@ -123,7 +123,7 @@ const WhatWeDo = () => {
         
         {/* Ministry Description (Expanded to take more space on small screens) */}
         <div className="text-gray-700 leading-relaxed md:w-2/3">
-          <p className="text-xl font-semibold mb-3 text-indigo-700">Discipleship Ministry</p>
+          <p className="text-xl font-semibold mb-3 text-[#141722]">Discipleship Ministry</p>
           <p>
             A **discipleship ministry** for youth and adults focuses on guiding
             individuals to grow spiritually and strengthen their faith. They
@@ -141,7 +141,7 @@ const WhatWeDo = () => {
           {/* Main Call to Action Button/Link */}
           <a
             href="/about" // Replace with actual "About Us" page link
-            className="flex items-center space-x-2 text-lg font-bold text-white bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-full shadow-lg transition duration-300"
+            className="flex items-center space-x-2 text-lg font-bold text-white bg-[#141722] hover:bg-indigo-700 px-6 py-3 rounded-full shadow-lg transition duration-300"
           >
             <span>Learn More About Us</span>
             <FaArrowRight className="text-xl" />
@@ -158,7 +158,7 @@ const WhatWeDo = () => {
                 href="[Your Facebook URL]" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-indigo-600 hover:text-indigo-800 transition duration-300"
+                className="text-[#141722] hover:text-indigo-800 transition duration-300"
                 aria-label="Follow us on Facebook"
               >
                 <FaFacebook size={28} />
@@ -169,7 +169,7 @@ const WhatWeDo = () => {
                 href="[Your Instagram URL]" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-indigo-600 hover:text-indigo-800 transition duration-300"
+                className="text-[#141722] hover:text-indigo-800 transition duration-300"
                 aria-label="Follow us on Instagram"
               >
                 <FaInstagram size={28} />
@@ -180,7 +180,7 @@ const WhatWeDo = () => {
                 href="[Your YouTube URL]" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-indigo-600 hover:text-indigo-800 transition duration-300"
+                className="text-[#141722] hover:text-indigo-800 transition duration-300"
                 aria-label="Subscribe to our YouTube channel"
               >
                 <FaYoutube size={28} />

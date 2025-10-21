@@ -7,6 +7,7 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Layout from "./Layout";
 import './index.css'
+import BlogDetails from "./pages/BlogDetails";
 
 
 const App = () => {
@@ -18,6 +19,9 @@ const App = () => {
         <Route path="gallery" element={<Gallery />} />
         <Route path="resources" element={<Resources />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="gallary" element={<Gallery />} />
+                <Route path="/blog/:slug" element={<BlogDetails />} />
+
       </Route>
     </Routes>
   );

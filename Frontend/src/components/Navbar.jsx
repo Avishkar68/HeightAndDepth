@@ -9,9 +9,8 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About us", path: "/about" },
-    { name: "Our stories", path: "/stories" },
-    { name: "Our projects", path: "/projects" },
-    { name: "Map", path: "/map" },
+    { name: "Gallary", path: "/gallary" },
+    { name: "Resources", path: "/resources" },
     { name: "Contact us", path: "/contact" },
   ];
 
@@ -46,13 +45,7 @@ const Navbar = () => {
             </NavLink>
           ))}
 
-          {/* Donate Button */}
-          <Link
-            to="/donate"
-            className="ml-4 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 text-white font-semibold hover:opacity-90 transition"
-          >
-            Donate
-          </Link>
+         
         </div>
 
         {/* Mobile Menu Button */}
