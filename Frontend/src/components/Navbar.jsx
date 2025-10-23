@@ -1,10 +1,26 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        setIsScrolled(scrollY > 100); // change 100 based on hero height
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    } else {
+      setIsScrolled(true); // For other pages, keep navbar dark
+    }
+  }, [location]);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -15,16 +31,22 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-gradient-to-r from-neutral-900/40 via-neutral-800/30 to-neutral-900/40 text-gray-100 border-b border-white/10 shadow-[0_2px_20px_rgba(0,0,0,0.3)]">
+    <nav
+      className={`sticky top-0 z-50 backdrop-blur-xl bg-gradient-to-r from-white/10 via-white/10 to-white/10 border-b border-white/10 shadow-[0_2px_20px_rgba(0,0,0,0.1)] transition-all duration-300 ${
+        isScrolled ? "text-gray-800" : "text-gray-100"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link
           to="/"
-          className="text-xl md:text-2xl font-semibold tracking-wide flex items-center gap-2"
+          className={`text-xl md:text-2xl font-semibold tracking-wide flex items-center gap-2 ${
+            isScrolled
+              ? "text-gray-900"
+              : "bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-400"
+          }`}
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-400">
-            HeightAndDepth
-          </span>
+          HeightAndDepth
         </Link>
 
         {/* Desktop Menu */}
@@ -34,9 +56,15 @@ const Navbar = () => {
               key={item.name}
               to={item.path}
               className={({ isActive }) =>
-                `relative transition-all duration-300 hover:text-blue-300 ${
+                `relative transition-all duration-300 ${
+                  isScrolled
+                    ? "hover:text-blue-600"
+                    : "hover:text-blue-300"
+                } ${
                   isActive
-                    ? "text-blue-300 after:absolute after:content-[''] after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-blue-300"
+                    ? isScrolled
+                      ? "text-blue-600 after:absolute after:content-[''] after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-blue-600"
+                      : "text-blue-300 after:absolute after:content-[''] after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-blue-300"
                     : ""
                 }`
               }
@@ -44,13 +72,13 @@ const Navbar = () => {
               {item.name}
             </NavLink>
           ))}
-
-         
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className={`md:hidden focus:outline-none ${
+            isScrolled ? "text-black" : "text-white"
+          }`}
           onClick={toggleMenu}
         >
           {isOpen ? <X size={26} /> : <Menu size={26} />}
@@ -66,8 +94,10 @@ const Navbar = () => {
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `transition hover:text-blue-300 ${
-                  isActive ? "text-blue-300 font-semibold" : ""
+                `transition ${
+                  isActive
+                    ? "text-blue-300 font-semibold"
+                    : "hover:text-blue-300 text-white"
                 }`
               }
             >
