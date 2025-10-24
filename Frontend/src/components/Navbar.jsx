@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import logo from "../assets/logo.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About us", path: "/about" },
-    { name: "Gallary", path: "/gallary" },
+    { name: "Gallery", path: "/gallary" },
     { name: "Resources", path: "/resources" },
     { name: "Contact us", path: "/contact" },
   ];
@@ -46,6 +46,7 @@ const Navbar = () => {
               : "bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-400"
           }`}
         >
+        <img src={logo} className="h-10"/>
           HeightAndDepth
         </Link>
 

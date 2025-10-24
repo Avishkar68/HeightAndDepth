@@ -1,6 +1,10 @@
 import React from "react";
 import res from "../assets/resources1.png"
 const Resources = () => {
+  const goldColor = '#FFAA4C';
+  const blueColor = '#22ABDF';
+  const redColor = '#E34444'; // Adjusted a brighter red for the CTA, while keeping the original intent
+
   // The list of "I am" declarations from the image content
   const identityDeclarations = [
     "I am chosen by God! Eph 1:4",
@@ -26,10 +30,14 @@ const Resources = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-12 lg:px-24 space-y-16">
+    // Use a very light blue for the background to match the theme
+    <section className="bg-blue-50 py-20 px-6 md:px-12 lg:px-24 space-y-16">
       {/* HEADER SECTION: WHO AM I ??? */}
       <div className="max-w-4xl mx-auto text-center space-y-4">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-indigo-800 tracking-tight">
+        <h1 
+          className="text-4xl md:text-6xl font-extrabold tracking-tight"
+          style={{ color: blueColor }} // Primary Blue Header
+        >
           WHO AM I ???
         </h1>
         <h2 className="text-xl md:text-3xl font-semibold text-gray-700">
@@ -39,7 +47,10 @@ const Resources = () => {
           <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-snug">
             DEATH AND LIFE ARE IN THE POWER OF THE TONGUE; AND THOSE WHO LOVE IT WILL EAT ITS FRUIT.
           </p>
-          <p className="text-lg font-medium text-indigo-600 mt-2">
+          <p 
+            className="text-lg font-medium mt-2"
+            style={{ color: goldColor }} // Accent Gold for Scripture Reference
+          >
             PROVERBS 18:21
           </p>
         </div>
@@ -49,7 +60,6 @@ const Resources = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start bg-white p-8 md:p-12 rounded-3xl shadow-xl">
         {/* Image / Featured Area - Placeholder for a relevant resource image or main ministry image */}
         <div className="flex flex-col items-center">
-          {/* Reusing the styling for the image block */}
           <img
             src={res}
             alt="Person smiling, symbolizing spiritual identity"
@@ -59,13 +69,21 @@ const Resources = () => {
 
         {/* Identity Declarations List */}
         <div className="text-gray-800 space-y-4">
-          <h3 className="text-3xl font-bold text-indigo-800 border-b-2 border-indigo-200 pb-2 mb-6">
+          <h3 
+            className="text-3xl font-bold border-b-2 pb-2 mb-6"
+            style={{ color: blueColor, borderBottomColor: goldColor }} // Primary Blue Header with Gold Underline
+          >
             Our Identity in Christ
           </h3>
           <ul className="space-y-3 list-none p-0">
             {identityDeclarations.map((declaration, index) => (
               <li key={index} className="flex items-start text-lg text-gray-700">
-                <span className="text-indigo-600 font-extrabold mr-3 mt-1">✓</span>
+                <span 
+                  className="font-extrabold mr-3 mt-1"
+                  style={{ color: goldColor }} // Accent Gold Checkmark
+                >
+                  ✓
+                </span>
                 {/* Bold the main declaration part for emphasis, keeping the scripture reference unbolded */}
                 {declaration.split('!').length > 1 ? (
                   <>
@@ -83,7 +101,10 @@ const Resources = () => {
 
       {/* FOOTER CALL TO ACTION/NOTE (reusing the style from the image) */}
       <div className="max-w-4xl mx-auto text-center pt-8">
-        <p className="text-xl md:text-2xl font-semibold text-red-600 leading-relaxed">
+        <p 
+          className="text-xl md:text-2xl font-semibold leading-relaxed"
+          style={{ color: redColor }} // Retaining a strong contrast color for the CTA
+        >
           Heights and Depths Ministry walks the journey with you to be deeply grounded in God's great love so you can experience the heights of His blessing in every area of your life.
         </p>
       </div>

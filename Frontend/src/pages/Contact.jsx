@@ -1,13 +1,20 @@
 import React from "react";
 
 const Contact = () => {
+  const goldColor = '#FFAA4C';
+  const blueColor = '#22ABDF';
+
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-12 lg:px-24">
+    // Use a very light gold for the background
+    <section className="bg-orange-50 py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-4">
+        <h2 
+          className="text-3xl md:text-4xl font-bold mb-4"
+          style={{ color: blueColor }} // Primary Blue Header
+        >
           Get in Touch
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-gray-700 max-w-2xl mx-auto">
           We'd love to connect with you! Whether you want to join a session,
           seek guidance, or simply reach out — send us a message below.
         </p>
@@ -29,7 +36,9 @@ const Contact = () => {
               name="name"
               required
               placeholder="Enter your full name"
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              // Updated focus ring to use the Blue brand color
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2"
+              style={{ '--tw-ring-color': blueColor }}
             />
           </div>
 
@@ -47,7 +56,9 @@ const Contact = () => {
               name="email"
               required
               placeholder="example@email.com"
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              // Updated focus ring to use the Blue brand color
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2"
+              style={{ '--tw-ring-color': blueColor }}
             />
           </div>
 
@@ -64,7 +75,9 @@ const Contact = () => {
               id="phone"
               name="phone"
               placeholder="+91 9876543210"
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              // Updated focus ring to use the Blue brand color
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2"
+              style={{ '--tw-ring-color': blueColor }}
             />
           </div>
 
@@ -82,14 +95,18 @@ const Contact = () => {
               required
               rows="5"
               placeholder="Write your message..."
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              // Updated focus ring to use the Blue brand color
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2"
+              style={{ '--tw-ring-color': blueColor }}
             ></textarea>
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-indigo-700 text-white py-3 rounded-xl font-semibold hover:bg-indigo-800 transition-all duration-300"
+            className="w-full text-white py-3 rounded-xl font-semibold transition-all duration-300"
+            // Button color is Primary Blue, hover color is a slightly darker Blue
+            style={{ backgroundColor: blueColor, '--tw-bg-opacity': 1, ':hover': { backgroundColor: '#1A89B6' } }}
           >
             Send Message
           </button>
