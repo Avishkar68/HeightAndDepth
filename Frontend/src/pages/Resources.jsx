@@ -34,6 +34,7 @@ const Resources = () => {
     <section className="bg-blue-50 py-20 px-6 md:px-12 lg:px-24 space-y-16">
       {/* HEADER SECTION: WHO AM I ??? */}
       <div className="max-w-4xl mx-auto text-center space-y-4">
+        
         <h1 
           className="text-4xl md:text-6xl font-extrabold tracking-tight"
           style={{ color: blueColor }} // Primary Blue Header

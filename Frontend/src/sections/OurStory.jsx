@@ -1,27 +1,30 @@
 import React, { useEffect } from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
+import blog1 from "../assets/blog1.png"
+import blog2 from "../assets/blog2.png"
+import blog3 from "../assets/blog3.png"
 
 const blogPosts = [
   {
     title: 'Learning Obedience Through Discipline',
     slug: 'learning-obedience-through-discipline',
     excerpt: 'A look into how discipline helps Christians grow in faith, humility, and obedience to God’s Word — not as punishment, but as spiritual formation.',
-    image: 'https://res.cloudinary.com/dghoya7tk/image/upload/v1734237200/christian_discipline_1.jpg',
+    image: blog1,
     date: '2025-07-15',
   },
   {
     title: 'Building a Life Rooted in Faith and Discipline',
     slug: 'building-a-life-rooted-in-faith',
     excerpt: 'Discover how faith-based discipline helps Christians stay strong in temptation, build moral strength, and grow in Christ-centered character.',
-    image: 'https://res.cloudinary.com/dghoya7tk/image/upload/v1734237255/christian_discipline_2.jpg',
+    image: blog2,
     date: '2025-07-02',
   },
   {
     title: 'Walking with Christ Daily: Lessons from the Disciplinary Workshop',
     slug: 'walking-with-christ-daily',
     excerpt: 'Insights and reflections from our community’s recent disciplinary workshop — understanding daily obedience as an act of love toward God.',
-    image: 'https://res.cloudinary.com/dghoya7tk/image/upload/v1734237301/christian_discipline_3.jpg',
+    image: blog3,
     date: '2025-06-20',
   },
 ];
@@ -34,15 +37,8 @@ const OurStories = () => {
   }, []);
 
   return (
-    <section className="pt-32 pb-20 px-6 md:px-12 min-h-screen bg-white text-gray-900">
-      <header className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-10">
-          Reflections from Our Disciplinary Sessions
-        </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Faith, obedience, and discipline — read how our community learns to walk closer with Christ every day.
-        </p>
-      </header>
+    <section className="mt-[0px]  px-6 md:px-12  bg-white text-gray-900">
+     
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-12">
         {blogPosts.map((post, index) => (

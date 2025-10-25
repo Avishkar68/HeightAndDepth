@@ -28,14 +28,14 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white">
+    <div className="flex justify-center items-center h-[80vh] bg-white">
       {/* Outer Animated Container */}
       <div
         ref={containerRef}
-        className="bg-[#141722] text-white px-12 py-16 max-w-6xl w-full text-center shadow-lg transition-all duration-700"
+        className="bg-[#141722] text-white px-16 py-20 max-w-6xl w-full text-center shadow-lg transition-all duration-700"
       >
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold leading-snug mb-12">
+        <h2 className="leading-snug mb-12 text-4xl md:text-5xl font-bold tracking-tight">
           It is a long established fact that <br />
           a reader will be distracted by the readable
         </h2>

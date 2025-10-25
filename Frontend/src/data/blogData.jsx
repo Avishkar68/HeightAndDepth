@@ -1,11 +1,14 @@
+import blog1 from "../assets/blog1.png"
+import blog2 from "../assets/blog2.png"
+import blog3 from "../assets/blog3.png"
+
 export const blogPosts = [
     {
         title: "Learning Obedience Through Discipline",
         slug: "learning-obedience-through-discipline",
         excerpt:
             "A look into how discipline helps Christians grow in faith, humility, and obedience to God’s Word — not as punishment, but as spiritual formation.",
-        image:
-            "https://res.cloudinary.com/dghoya7tk/image/upload/v1734237200/christian_discipline_1.jpg",
+        image: blog1,
         date: "2025-07-15",
         content: `
 ### Discipline as a Path to Spiritual Growth
@@ -24,9 +27,8 @@ Through personal testimonies, prayer, and reflection, participants realized that
         slug: "building-a-life-rooted-in-faith",
         excerpt:
             "Discover how faith-based discipline helps Christians stay strong in temptation, build moral strength, and grow in Christ-centered character.",
-        image:
-            "https://res.cloudinary.com/dghoya7tk/image/upload/v1734237255/christian_discipline_2.jpg",
-        date: "2025-07-02",
+            image: blog2,
+            date: "2025-07-02",
         content: `
 ### The Power of Consistent Faith
 
@@ -46,9 +48,8 @@ Many shared how structured prayer and accountability groups helped them overcome
         slug: "walking-with-christ-daily",
         excerpt:
             "Insights and reflections from our community’s recent disciplinary workshop — understanding daily obedience as an act of love toward God.",
-        image:
-            "https://res.cloudinary.com/dghoya7tk/image/upload/v1734237301/christian_discipline_3.jpg",
-        date: "2025-06-20",
+            image: blog3,
+             date: "2025-06-20",
         content: `
 ### Daily Discipline, Eternal Impact
 

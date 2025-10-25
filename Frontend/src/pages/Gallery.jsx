@@ -6,12 +6,14 @@ const Gallery = () => {
 
   return (
     <div className='w-screen flex flex-col justify-center items-center'>
-         <h1 
-           className="text-5xl mt-10 mb-6 font-bold"
-           style={{ color: blueColor }} // Primary Blue Header
-         >
-           FAITH FRAMES
-         </h1>
+     
+         <h1
+        className="text-4xl md:text-6xl mt-10 font-extrabold tracking-tight text-center"
+        style={{ color: blueColor }} // Primary Blue Header
+      >
+        FAITH FRAMES
+      </h1>
+  
       <ParallaxScrollDemo />
     </div>
   )
