@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaFacebook, FaInstagram, FaYoutube, FaArrowRight } from 'react-icons/fa';
-import wwd1 from "../assets/wwd1.png"
-import wwd2 from "../assets/wwd2.png"
-import wwd3 from "../assets/wwd3.png"
-import wwd4 from "../assets/wwd4.png"
-import wwd5 from "../assets/wwd5.png"
-import wwd6 from "../assets/wwd6.png"
+import wwdn1 from "../assets/wwdn1.jpg"
+import wwdn2 from "../assets/wwdn2.jpg"
+import wwdn3 from "../assets/wwdn3.jpg"
+import wwdn4 from "../assets/wwdn4.jpg"
+import wwdn5 from "../assets/wwdn5.jpg"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,34 +17,29 @@ const WhatWeDo = () => {
 
   const sections = [
     {
-      "title": "Educate",
-      "desc": "Promoting genocide awareness and critical history.",
-      "img": wwd1
+      "title": "Relational Discipleship",
+      "desc": "We walk alongside you—not above you. Through small  groups, mentoring, and honest conversations, online and onsite, we help you discover how Jesus meets you in everyday life.",
+      "img": wwdn1
     },
     {
-      "title": "Empower",
-      "desc": "Equality, dignity, and justice for communities.",
-      "img": wwd2
+      "title": "Daily Living with Jesus",
+      "desc": "Discipleship isn’t confined to Sunday mornings. It’s about letting Jesus shape your thoughts, decisions, relationships, and rhythms—every single day	Daily Living with Jesus",
+      "img": wwdn2
     },
     {
-      "title": "Advocate",
-      "desc": "Campaigns and local engagement for change.",
-      "img": wwd3
+      "title": "Spiritual Formation",
+      "desc": "We help you move from head knowledge to heart transformation. Through Scripture, prayer, and discipleship evangelism tools, you’ll learn to hear God’s voice and respond with faith.",
+      "img": wwdn3
     },
     {
-      "title": "Reform",
-      "desc": "Driving progressive policy and legal changes.",
-      "img": wwd4
+      "title": "Empowered Living",
+      "desc": "The Holy Spirit is not a concept—He’s your daily companion. We equip you  to rely on His power, walk in His gifts, and reflect His fruit in real life.",
+      "img": wwdn4
     },
     {
-      "title": "Lead",
-      "desc": "Developing youth for future justice advocacy.",
-      "img": wwd5
-    },
-    {
-      "title": "Respond",
-      "desc": "Crisis aid, support, and recovery efforts.",
-      "img": wwd6
+      "title": "Purposeful Life ",
+      "desc": "You were made for more. We help you discover your calling and equip you to live it out—whether in your workplace, family, or community.",
+      "img": wwdn5
     }
   ]
 

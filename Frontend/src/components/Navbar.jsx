@@ -43,7 +43,7 @@ const Navbar = () => {
           className={`text-xl md:text-2xl font-semibold tracking-wide flex items-center gap-2 ${
             isScrolled
               ? "text-gray-900"
-              : "bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-pink-400"
+              : "bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-400"
           }`}
         >
         <img src={logo} className="h-10"/>
@@ -105,13 +105,7 @@ const Navbar = () => {
               {item.name}
             </NavLink>
           ))}
-          <Link
-            to="/donate"
-            onClick={() => setIsOpen(false)}
-            className="mt-3 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 text-white font-semibold text-center hover:opacity-90 transition"
-          >
-            Donate
-          </Link>
+        
         </div>
       )}
     </nav>
