@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 backdrop-blur-xl bg-gradient-to-r from-white/10 via-white/10 to-white/10 border-b border-white/10 shadow-[0_2px_20px_rgba(0,0,0,0.1)] transition-all duration-300 ${
-        isScrolled ? "text-gray-800" : "text-gray-100"
+        isScrolled ? "text-gray-800" : "text-gray-800"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
