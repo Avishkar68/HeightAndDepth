@@ -4,6 +4,7 @@ import WhatWeDo from '../sections/WhatWeDo'
 import OurStories from '../sections/OurStory'
 import Stats from '../sections/Stats'
 import Testimonials from '../sections/Testimonials'
+import upComingEvents from '../sections/upComingEvents'
 import HelpUsSection from '../sections/HelpUsSection'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <WhatWeDo/>
       <OurStories/>
       <Stats/>
+      <upComingEvents/>
       <Testimonials/>
       <HelpUsSection />
     </div>
