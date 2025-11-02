@@ -29,6 +29,23 @@ import img26 from "../assets/gallery/26.jpeg"
 import img27 from "../assets/gallery/27.jpeg"
 import img28 from "../assets/gallery/28.jpeg"
 import img29 from "../assets/gallery/29.jpeg"
+import img30 from "../assets/gallery/30.jpeg"
+import img31 from "../assets/gallery/31.jpeg"
+import img32 from "../assets/gallery/32.jpeg"
+import img33 from "../assets/gallery/33.jpeg"
+import img34 from "../assets/gallery/34.jpeg"
+import img35 from "../assets/gallery/35.jpeg"
+import img36 from "../assets/gallery/36.jpeg"
+import img37 from "../assets/gallery/37.jpeg"
+import img38 from "../assets/gallery/38.jpeg"
+import img39 from "../assets/gallery/39.jpeg"
+import img40 from "../assets/gallery/40.jpeg"
+import img41 from "../assets/gallery/41.jpeg"
+import img42 from "../assets/gallery/42.jpeg"
+import img43 from "../assets/gallery/43.jpeg"
+import img44 from "../assets/gallery/44.jpeg"
+
+
 
 export function ParallaxScrollDemo() {
   return <ParallaxScroll images={images} />;
@@ -36,10 +53,10 @@ export function ParallaxScrollDemo() {
 
 const images = [
   img1,
-  img2,
-  img3,
-  img4,
-  img5,
+  // img2,
+  // img3,
+  // img4,
+  // img5,
   img6,
   img7,
   img8,
@@ -51,17 +68,32 @@ const images = [
   img14,
   img15,
   img16,
-  img17,
+  // img17,
   img18,
-  img19,
+  // img19,
   img20,
   img21,
-  img22,
-  img23,
+  // img22,
+  // img23,
   img24,
   img25,
   img26,
   img27,
   img28,
   img29,
+  img30,
+  img31,
+  img32,
+  img33,
+  img34,
+  img35,
+  img36,
+  img37,
+  img38,
+  img39,
+  img40,
+  img41,
+  img42,
+  img43,
+  img44,
 ];

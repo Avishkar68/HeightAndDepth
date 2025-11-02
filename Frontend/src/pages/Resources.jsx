@@ -4,6 +4,8 @@ import res from "../assets/resources1.png"; // Assuming this is a general resour
 // IMPORT YOUR BOOK ASSETS HERE
 import book1PDF from "../assets/book1.pdf";
 import book1Cover from "../assets/book1cover.png";
+import book2Cover from "../assets/book2cover.png";
+
 
 // Note: Replace the above paths with your actual asset file names and extensions.
 
@@ -23,12 +25,12 @@ const Resources = () => {
       pdf: book1PDF,
       downloadName: "The_Power_of_Identity.pdf",
     },
-    // {
-    //   name: "Living the Blessed Life",
-    //   cover: book1Cover,
-    //   pdf: book1PDF,
-    //   downloadName: "Living_the_Blessed_Life.pdf",
-    // },
+    {
+      name: "Living the Blessed Life",
+      cover: book2Cover,
+      pdf: book1PDF,
+      downloadName: "Living_the_Blessed_Life.pdf",
+    },
     // Add more books here
   ];
 
