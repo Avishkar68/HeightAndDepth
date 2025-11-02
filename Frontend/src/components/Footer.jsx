@@ -47,10 +47,11 @@ const Footer = () => {
           <h2 className="text-xl font-semibold text-white mb-4">Contact Us</h2>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
-              <Mail size={18} /> <span>faithcommunity@gmail.com</span>
+              <Mail size={18} />{" "}
+              <span>heightanddepthministries@gmail.com</span>
             </li>
             <li className="flex items-center gap-2">
-              <Phone size={18} /> <span>+91 98765 43210</span>
+              <Phone size={18} /> <span>+91 98606 67533</span>
             </li>
             <li>Mumbai, India</li>
           </ul>
@@ -60,22 +61,27 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold text-white mb-4">Follow Us</h2>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition">
-              <Facebook size={22} />
-            </a>
-            <a href="#" className="hover:text-white transition">
+            <a
+              href="https://www.instagram.com/heightdepth?utm_source=qr&igsh=ZW02amJodjFkOXdt"
+              className="hover:text-white transition"
+            >
               <Instagram size={22} />
-            </a>
-            <a href="#" className="hover:text-white transition">
-              <Twitter size={22} />
             </a>
           </div>
         </div>
       </div>
 
       {/* Bottom Line */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Faith Community. All rights reserved.
+      <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>© {new Date().getFullYear()} Faith Community. All rights reserved.</p>
+
+        {/* Admin Login Button */}
+        <a
+          href="/admin"
+          className="mt-3 md:mt-0 px-4 py-1 border border-gray-600 rounded-full text-gray-400 hover:text-white hover:border-white transition text-xs"
+        >
+          Admin Login
+        </a>
       </div>
     </footer>
   );

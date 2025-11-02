@@ -14,41 +14,42 @@ const HelpUsSection = () => {
 
     // Data for the three cards
     const helpOptions = [
-        {
-            icon: FaRegCircle,
-            title: "Join the funding",
-            desc: "Be a part of our funding efforts and help us bring about lasting impact in underserved communities. Your contribution plays a crucial role in empowering individuals and fostering sustainable change.",
-            buttonText: "Show more",
-            isDark: false,
-            iconColor: goldColor, // Using blue for light card icons
-            buttonBorderColor: blueColor,
-            buttonHoverBg: blueColor,
-            buttonHoverText: 'text-white'
-        },
-        {
-            icon: FaRegLightbulb,
-            title: "Donate for solar panel",
-            desc: "Make a donation towards our solar panel initiative and help us bring clean, sustainable energy to communities in need. Your support will directly contribute to powering schools, community centers, and improving lives through renewable energy.",
-            buttonText: "Show more",
-            isDark: false, // This card is dark
-            iconColor: goldColor, // Using gold for dark card icon
-            buttonBg: goldColor, // Gold button background for dark card
-            buttonTextDark: 'text-gray-900', // Text for the gold button
-            buttonHoverBg: blueColor, // Hover to blue
-            buttonHoverText: 'text-white'
-        },
-        {
-            icon: FaRegClock,
-            title: "Volunteer for refugees",
-            desc: "Join us as a volunteer and make a difference in the lives of refugees. By dedicating your time and skills, you can provide support, compassion, and empowerment to those seeking refuge and a fresh start.",
-            buttonText: "Show more",
-            isDark: false,
-            iconColor: goldColor, // Using blue for light card icons
-            buttonBorderColor: blueColor,
-            buttonHoverBg: blueColor,
-            buttonHoverText: 'text-white'
-        },
-    ];
+  {
+    icon: FaRegCircle,
+    title: "Join a Discipleship Group",
+    desc: "Be a part of a growing community of believers learning obedience, discipline, and faith in Christ together. Walk alongside others seeking to strengthen their relationship with God and live out His Word daily.",
+    buttonText: "Contact us ",
+    isDark: false,
+    iconColor: goldColor,
+    buttonBorderColor: blueColor,
+    buttonHoverBg: blueColor,
+    buttonHoverText: 'text-white'
+  },
+  {
+    icon: FaRegLightbulb,
+    title: "Support Our Ministry",
+    desc: "Your contribution helps us reach more lives with God’s Word through study groups, devotional materials, and outreach programs. Together, we can continue to spread light and hope through Christ-centered teaching.",
+    buttonText: "Contact us ",
+    isDark: false,
+    iconColor: goldColor,
+    buttonBg: goldColor,
+    buttonTextDark: 'text-gray-900',
+    buttonHoverBg: blueColor,
+    buttonHoverText: 'text-white'
+  },
+  {
+    icon: FaRegClock,
+    title: "Volunteer in Outreach",
+    desc: "Offer your time and talents to serve others—whether it’s helping with events, leading prayer, mentoring youth, or assisting in devotional sessions. Every act of service brings glory to God and builds His kingdom.",
+    buttonText: "Contact us ",
+    isDark: false,
+    iconColor: goldColor,
+    buttonBorderColor: blueColor,
+    buttonHoverBg: blueColor,
+    buttonHoverText: 'text-white'
+  },
+];
+
 
     return (
         <section className="py-20 bg-white text-gray-900"> {/* Main section background can remain white or light gray */}
@@ -56,7 +57,7 @@ const HelpUsSection = () => {
                 {/* Section Header */}
                 <div className="mb-12 flex flex-col justify-center items-center gap-6">
                     <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center" style={{ color: blueColor }}>
-                        How can you help us
+                        YOU can make a difference!
                     </h2>
 
                     <p className="text-gray-600 text-center max-w-[720px] mx-auto text-[20px] mt-4 leading-[28px]">
