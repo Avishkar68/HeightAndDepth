@@ -10,18 +10,18 @@ const Stats = () => {
   useEffect(() => {
     const el = containerRef.current;
 
-    // Animate the border radius on scroll
+    // Animate border radius on scroll
     gsap.fromTo(
       el,
-      { borderRadius: "0px" }, // Start pointed
+      { borderRadius: "0px" },
       {
-        borderRadius: "200px", // End rounded oval
+        borderRadius: "200px",
         ease: "power1.out",
         scrollTrigger: {
           trigger: el,
-          start: "top 80%", // when container enters viewport
-          end: "top 20%",   // till it reaches this position
-          scrub: true,      // smooth animation with scroll
+          start: "top 80%",
+          end: "top 20%",
+          scrub: true,
         },
       }
     );
@@ -36,36 +36,40 @@ const Stats = () => {
       >
         {/* Heading */}
         <h2 className="leading-snug mb-12 text-4xl md:text-5xl font-bold tracking-tight">
-          It is a long established fact that <br />
-          a reader will be distracted by the readable
+          Growing Together in Faith & Discipline
         </h2>
 
         {/* Stats Row */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 text-blue-200">
           {/* Stat 1 */}
           <div>
-            <p className="text-5xl font-bold text-blue-300">100+</p>
+            <p className="text-5xl font-bold text-blue-300">30+</p>
             <p className="text-sm mt-2 text-gray-400">
-              Yazidis are still residing in refugee <br /> camps by 2021
+              Lives touched through our <br /> devotional & discipline sessions
             </p>
           </div>
 
           {/* Stat 2 */}
           <div>
-            <p className="text-5xl font-bold text-blue-300">200k</p>
+            <p className="text-5xl font-bold text-blue-300">4</p>
             <p className="text-sm mt-2 text-gray-400">
-              People already received help & <br /> assistance from us
+              Ongoing study groups focused on <br /> spiritual growth & obedience
             </p>
           </div>
 
           {/* Stat 3 */}
           <div>
-            <p className="text-5xl font-bold text-blue-300">78M</p>
+            <p className="text-5xl font-bold text-blue-300">3</p>
             <p className="text-sm mt-2 text-gray-400">
-              of youth are not attending school, <br /> globally
+              Locations where our <br /> ministry sessions are active
             </p>
           </div>
         </div>
+
+        {/* Optional closing line */}
+        <p className="text-gray-400 text-sm mt-12 italic">
+          “For where two or three are gathered in My name, I am there in the midst of them.” — Matthew 18:20
+        </p>
       </div>
     </div>
   );

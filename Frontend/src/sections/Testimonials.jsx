@@ -163,7 +163,7 @@ export default function Testimonials() {
   // ];
   return (
     <div className="w-screen bg-[#EEF6FF] py-16">
-      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center">What our client say</h1>
+      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center">What our community say</h1>
       <p className="text-gray-600 max-w-[720px] text-center mx-auto text-[20px] mt-4 leading-[28px]">
       Unfiltered testimonials and authentic gratitude. These voices are the true measure of our success in advocating for dignity, equality, and lasting reform.
           </p>

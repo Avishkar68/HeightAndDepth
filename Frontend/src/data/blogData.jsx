@@ -4,62 +4,63 @@ import blog3 from "../assets/blog3.png"
 
 export const blogPosts = [
     {
-        title: "Learning Obedience Through Discipline",
-        slug: "learning-obedience-through-discipline",
-        excerpt:
-            "A look into how discipline helps Christians grow in faith, humility, and obedience to God’s Word — not as punishment, but as spiritual formation.",
+        title: "🌱 DEVOTIONAL: TRUST THAT LEADS TO PEACE",
+        slug: "devotional-trust-that-leads-to-peace",
+        excerpt:"Trust in the Lord with all your heart, And lean not on your own understanding; In all your ways acknowledge Him, And He shall direct your paths.",
         image: blog1,
         date: "2025-07-15",
         content: `
-### Discipline as a Path to Spiritual Growth
+### TRUST THAT LEADS TO PEACE
 
-In our recent **Christian Disciplinary Session**, we reflected on Hebrews 12:11 —  
-> “No discipline seems pleasant at the time, but painful. Later on, however, it produces a harvest of righteousness and peace for those who have been trained by it.”
+To trust in the Lord is to place our full confidence in His character—His reliability, truth, and power—even when life feels uncertain. It’s more than acknowledging that God exists; it’s surrendering every part of our lives to His loving authority.
+When we choose to rely on His wisdom instead of our own understanding, He faithfully directs our steps. We were never meant to navigate life alone. God invites us to lean into His strength, His love, and His guidance—giving Him control over our journey rather than trying to map it out ourselves.
+As we walk in trust, peace becomes our compass. Not the absence of problems, but the presence of God’s assurance. In every decision, every detour, and every delay, His peace confirms that we’re walking in step with Him.
+Would you like a visual version of this for your website or a printable devotional card? I can help with that too.
+-	By Ms. Regina Flanery
 
-We learned that discipline is not **God’s anger**, but His **love in action**.  
-It shapes our hearts to become more like Christ — patient, humble, and obedient.  
-
-Through personal testimonies, prayer, and reflection, participants realized that small acts of discipline — such as daily prayer, forgiveness, and self-control — lead to lifelong transformation.
     `,
     },
     {
-        title: "Building a Life Rooted in Faith and Discipline",
-        slug: "building-a-life-rooted-in-faith",
+        title: "🌱 DEVOTIONAL: BEYOND THE COMFORT ZONE",
+        slug: "beyond-the-comfort-zone",
         excerpt:
-            "Discover how faith-based discipline helps Christians stay strong in temptation, build moral strength, and grow in Christ-centered character.",
+            " Fear not, for I am with you; Be not dismayed, for I am your God. I will strengthen you, Yes, I will help you, I will uphold you with My righteous right hand.” ",
             image: blog2,
             date: "2025-07-02",
         content: `
-### The Power of Consistent Faith
+### Beyond the comfort zone
 
-Discipline is not about restriction — it’s about **freedom in Christ**.  
-When we practice discipline in prayer, thoughts, and actions, we make space for the Holy Spirit to guide our lives.
+If you’re feeling stuck, uncertain, or afraid to move forward—this is a gentle nudge from heaven.
+God didn’t create you to play it safe or stay small. His call on your life is bold, stretching you beyond what’s familiar. He invites you to trust, to grow, to walk by faith.
+That comfort zone? It may feel secure, but it’s not where transformation happens. Your greatest breakthrough lies just beyond it—where faith meets obedience.
+You’re not alone. Just like Peter stepping out of the boat, you’re invited to fix your eyes on Jesus and walk toward the impossible. He’s the One who strengthens, guides, and holds you up.
+Declaration:
+“Lord, I choose faith over fear. I step out, trusting that You are with me—strengthening, guiding, and upholding me every step of the way.”                                
 
-During our session, we explored how:
-- **Morning devotionals** can anchor our day.
-- **Scripture memorization** strengthens our mind.
-- **Serving others** builds humility and compassion.
-
-Many shared how structured prayer and accountability groups helped them overcome distractions and grow spiritually.
     `,
     },
     {
-        title: "Walking with Christ Daily: Lessons from the Disciplinary Workshop",
-        slug: "walking-with-christ-daily",
+        title: "🌱 DEVOTIONAL: WHEN THE SPIRIT HOVERS",
+        slug: "when-the-spirit-hovers",
         excerpt:
-            "Insights and reflections from our community’s recent disciplinary workshop — understanding daily obedience as an act of love toward God.",
+            "The earth was without form, and void; and darkness was on the face of the deep. And the Spirit of God was hovering over the face of the waters.",
             image: blog3,
              date: "2025-06-20",
         content: `
-### Daily Discipline, Eternal Impact
+### When the spirit hovers
 
-In this session, the focus was on **living intentionally** for Christ every day.  
-We discussed the small disciplines that shape big destinies — consistent prayer, scripture reading, and kind actions.
+Before creation began, before light broke through the darkness, the Spirit of God was already there—hovering, brooding, moving with purpose.
+The image is tender: like a bird fluttering over its young, protecting and nurturing. The Spirit wasn’t distant or passive. He was present—hovering over chaos, preparing to bring life, order, and beauty.
+That same Spirit is moving over your life today.
+Even if things feel formless, empty, or dark… even if your heart feels aimless or overwhelmed… the Holy Spirit is near. He is not waiting for you to have it all together. He is already moving toward you with intention and love, ready to create something new.
+•	He is already surrounding you—if you’ll welcome Him.
+•	He is the very presence and power of God.
+•	He is the Creator, still creating.
+•	 He is supernatural, not limited by what you see.
+•	He brings light into every dark place.
+Let this truth settle in your spirit: the same Spirit who hovered over the deep is hovering over you. And where He moves, new life begins.
+-	By Mrs. Manju Sujith
 
-One of our speakers shared:
-> “Discipline is not just about saying no to sin, but about saying yes to God’s plan.”
-
-The workshop concluded with a time of worship and surrender, reminding everyone that true discipline flows from love — not fear.
     `,
     },
 ];
