@@ -1,6 +1,6 @@
 import React from "react";
 
-const upComingEvents = () => {
+const UpComingEvents = () => {
   const events = [
     {
       title: "Discipleship Workshop: Walking in Obedience",
@@ -26,13 +26,13 @@ const upComingEvents = () => {
   ];
 
   return (
-    <section className="py-20 bg-white text-gray-800" id="events">
+    <section className="pb-20 bg-white text-gray-800" id="events">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center" >
           Upcoming Events
         </h2>
-        <p className="text-gray-500 mb-12">
+        <p className="text-gray-600 max-w-[720px] text-center mx-auto text-[20px] mt-4 leading-[28px] mb-10">
           Join us as we grow together in faith and purpose through worship,
           study, and community.
         </p>
@@ -51,7 +51,7 @@ const upComingEvents = () => {
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
                 {event.description}
               </p>
-              <button className="border border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition">
+              <button className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition">
                 {event.buttonText}
               </button>
             </div>
@@ -62,4 +62,4 @@ const upComingEvents = () => {
   );
 };
 
-export default upComingEvents;
+export default UpComingEvents;
