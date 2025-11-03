@@ -116,7 +116,6 @@ const WhatWeDo = () => {
 
         </div>
       </div>
-
     </div>
   );
 };

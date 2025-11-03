@@ -247,13 +247,13 @@ const Resources = () => {
         <div className="mx-auto gap-12 items-start bg-white p-8 md:p-12 rounded-3xl shadow-xl">
           <div className="text-gray-800 space-y-4 ">
             <div
-              className="flex justify-between border-b-2 pb-2 mb-6 items-center"
+              className=" flex flex-col md:flex-row justify-between border-b-2 pb-2 mb-6 items-start md:items-center gap-6 md:gap-0"
               style={{ color: blueColor, borderBottomColor: goldColor }}
             >
               <h3 className="text-3xl font-bold">Our Identity in Christ</h3>
               <button
                 onClick={handleDownloadPDF}
-                className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+                className="bg-[#FFAA4C] hidden md:block cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
               >
                 Download Declaration
               </button>
@@ -284,6 +284,12 @@ const Resources = () => {
                   )}
                 </li>
               ))}
+              <button
+                onClick={handleDownloadPDF}
+                className="bg-[#FFAA4C] md:hidden mx-auto mt-6 block cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+              >
+                Download Declaration
+              </button>
             </ul>
           </div>
         </div>

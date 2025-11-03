@@ -1,3 +1,5 @@
+// src/components/Stats.jsx (No changes needed, already responsive)
+
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -28,14 +30,14 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-[80vh] bg-white">
+    <div className="flex justify-center items-center h-[90vh] md:h-[80vh] bg-white">
       {/* Outer Animated Container */}
       <div
         ref={containerRef}
-        className="bg-[#141722] text-white px-16 py-20 max-w-6xl w-full text-center shadow-lg transition-all duration-700"
+        className="bg-[#141722] text-white px-8 sm:px-16 py-20 sm:py-20 max-w-6xl w-full text-center shadow-lg transition-all duration-700 mx-4" // Added mx-4 for horizontal padding on mobile
       >
         {/* Heading */}
-        <h2 className="leading-snug mb-12 text-4xl md:text-5xl font-bold tracking-tight">
+        <h2 className="leading-snug mb-12 text-3xl md:text-5xl font-bold tracking-tight">
           Growing Together in Faith & Discipline
         </h2>
 
