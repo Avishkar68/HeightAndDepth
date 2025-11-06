@@ -5,7 +5,7 @@ import res from "../assets/resources1.png"; // Assuming this is a general resour
 import book1PDF from "../assets/book1.pdf";
 import book1Cover from "../assets/book1cover.png";
 import book2Cover from "../assets/book2cover.png";
-
+import whoarewe from "../assets/whoarewe.jpg";
 
 // Note: Replace the above paths with your actual asset file names and extensions.
 
@@ -238,13 +238,16 @@ const Resources = () => {
               DEATH AND LIFE ARE IN THE POWER OF THE TONGUE; AND THOSE WHO LOVE
               IT WILL EAT ITS FRUIT.
             </p>
-            <p className="text-lg font-medium mt-2" style={{ color: goldColor }}>
+            <p
+              className="text-lg font-medium mt-2"
+              style={{ color: goldColor }}
+            >
               PROVERBS 18:21
             </p>
           </div>
         </div>
 
-        <div className="mx-auto gap-12 items-start bg-white p-8 md:p-12 rounded-3xl shadow-xl">
+        {/* <div className="mx-auto gap-12 items-start bg-white p-8 md:p-12 rounded-3xl shadow-xl">
           <div className="text-gray-800 space-y-4 ">
             <div
               className="flex justify-between border-b-2 pb-2 mb-6 items-center"
@@ -286,7 +289,66 @@ const Resources = () => {
               ))}
             </ul>
           </div>
+        </div> */}
+
+        <div className="mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-xl">
+          <div
+            className="flex justify-between border-b-2 pb-2 mb-6 items-center"
+            style={{ color: blueColor, borderBottomColor: goldColor }}
+          >
+            <h3 className="text-3xl font-bold">Our Identity in Christ</h3>
+            <button
+              onClick={handleDownloadPDF}
+              className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+            >
+              Download Declaration
+            </button>
+          </div>
+
+          {/* FLEX CONTAINER */}
+<div className="flex flex-col md:flex-row gap-10 items-center">
+            {/* IMAGE SIDE */}
+            <div className="w-full md:w-1/2">
+              <img
+                src={whoarewe}
+                alt="Our Identity in Christ"
+                className="w-full h-96 object-cover rounded-2xl"
+              />
+            </div>
+
+            {/* TEXT SIDE */}
+            <div className="w-full md:w-1/2 text-gray-800 space-y-4">
+              <ul className="space-y-3 list-none p-0">
+                {identityDeclarations.map((declaration, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start text-lg text-gray-700"
+                  >
+                    <span
+                      className="font-extrabold mr-3 mt-1"
+                      style={{ color: goldColor }}
+                    >
+                      ✓
+                    </span>
+                    {declaration.split("!").length > 1 ? (
+                      <>
+                        <span className="font-semibold">
+                          {declaration.split("!")[0]}!
+                        </span>
+                        <span className="text-sm italic ml-1 text-gray-500">
+                          {declaration.split("!")[1]}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="font-semibold">{declaration}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
+
         {/* End Existing Content */}
 
         {/* --- NEW BOOKS SECTION --- */}
@@ -305,7 +367,7 @@ const Resources = () => {
               >
                 <div
                   className="w-40 h-56 cursor-pointer rounded-lg overflow-hidden shadow-lg mb-4"
-                  onClick={() => handleViewPDF(book.pdf)}
+                  // onClick={() => handleViewPDF(book.pdf)}
                 >
                   <img
                     src={book.cover}
@@ -317,8 +379,9 @@ const Resources = () => {
                   {book.name}
                 </p>
                 <a
-                  href={book.pdf}
-                  download={book.downloadName}
+                  href="https://www.awmi.net/study-guides/?id=417"
+                  target="_blank"
+                  // download={book.downloadName}
                   className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
                 >
                   Download Book
@@ -335,8 +398,8 @@ const Resources = () => {
             style={{ color: redColor }}
           >
             Heights and Depths Ministry walks the journey with you to be deeply
-            grounded in God's great love so you can experience the heights of His
-            blessing in every area of your life.
+            grounded in God's great love so you can experience the heights of
+            His blessing in every area of your life.
           </p>
         </div>
       </section>

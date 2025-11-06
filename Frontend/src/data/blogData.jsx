@@ -36,7 +36,7 @@ That comfort zone? It may feel secure, but it’s not where transformation happe
 You’re not alone. Just like Peter stepping out of the boat, you’re invited to fix your eyes on Jesus and walk toward the impossible. He’s the One who strengthens, guides, and holds you up.
 Declaration:
 “Lord, I choose faith over fear. I step out, trusting that You are with me—strengthening, guiding, and upholding me every step of the way.”                                
-
+-Mrs.Kruti Andharia
     `,
     },
     {

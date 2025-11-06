@@ -1,6 +1,6 @@
 import React from "react";
 
-const upComingEvents = () => {
+const UpComingEvents = () => {
   const events = [
     {
       title: "Discipleship Workshop: Walking in Obedience",
@@ -62,4 +62,4 @@ const upComingEvents = () => {
   );
 };
 
-export default upComingEvents;
+export default UpComingEvents;

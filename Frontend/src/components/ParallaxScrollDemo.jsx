@@ -44,6 +44,9 @@ import img41 from "../assets/gallery/41.jpeg"
 import img42 from "../assets/gallery/42.jpeg"
 import img43 from "../assets/gallery/43.jpeg"
 import img44 from "../assets/gallery/44.jpeg"
+import img45 from "../assets/gallery/45.jpg"
+import img46 from "../assets/gallery/46.jpg"
+import img47 from "../assets/gallery/47.jpg"
 
 
 
@@ -66,10 +69,10 @@ const images = [
   img12,
   img13,
   img14,
-  img15,
+  // img15,
   img16,
   // img17,
-  img18,
+  // img18,
   // img19,
   img20,
   img21,
@@ -78,8 +81,8 @@ const images = [
   img24,
   img25,
   img26,
-  img27,
-  img28,
+  // img27,
+  // img28,
   img29,
   img30,
   img31,
@@ -96,4 +99,7 @@ const images = [
   img42,
   img43,
   img44,
+  // img45,
+  img46,
+  img47
 ];

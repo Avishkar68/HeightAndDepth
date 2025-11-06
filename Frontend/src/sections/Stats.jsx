@@ -51,7 +51,7 @@ const Stats = () => {
 
           {/* Stat 2 */}
           <div>
-            <p className="text-5xl font-bold text-blue-300">4</p>
+            <p className="text-5xl font-bold text-blue-300">5</p>
             <p className="text-sm mt-2 text-gray-400">
               Ongoing study groups focused on <br /> spiritual growth & obedience
             </p>

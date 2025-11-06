@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Twitter, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -38,6 +39,10 @@ const Footer = () => {
               <a href="#" className="hover:text-white transition">
                 Contact
               </a>
+            </li>
+            <li>
+            <Link to="/admin"> Admin login</Link>
+             
             </li>
           </ul>
         </div>

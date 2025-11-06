@@ -4,8 +4,8 @@ import WhatWeDo from '../sections/WhatWeDo'
 import OurStories from '../sections/OurStory'
 import Stats from '../sections/Stats'
 import Testimonials from '../sections/Testimonials'
-import upComingEvents from '../sections/upComingEvents'
 import HelpUsSection from '../sections/HelpUsSection'
+import UpComingEvents from '../sections/UpComingEvents'
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <WhatWeDo/>
       <OurStories/>
       <Stats/>
-      <upComingEvents/>
+      {/* <UpComingEvents/> */}
       <Testimonials/>
       <HelpUsSection />
     </div>
