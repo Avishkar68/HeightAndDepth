@@ -52,11 +52,10 @@ const UpComingEvents = () => {
                 {event.description}
               </p>
               <a
-                href="/contact">
-                <button className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition">
-
-                  {event.buttonText}
-                </button>
+                href="/contact"
+                className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition"
+              >
+                {event.buttonText}
               </a>
             </div>
           ))}

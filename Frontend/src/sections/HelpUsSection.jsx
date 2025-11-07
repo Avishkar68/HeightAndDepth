@@ -14,41 +14,41 @@ const HelpUsSection = () => {
 
     // Data for the three cards
     const helpOptions = [
-  {
-    icon: FaRegCircle,
-    title: "Join a Discipleship Group",
-    desc: "Be a part of a growing community of believers learning obedience, discipline, and faith in Christ together. Walk alongside others seeking to strengthen their relationship with God and live out His Word daily.",
-    buttonText: "Contact us ",
-    isDark: false,
-    iconColor: goldColor,
-    buttonBorderColor: blueColor,
-    buttonHoverBg: blueColor,
-    buttonHoverText: 'text-white'
-  },
-  {
-    icon: FaRegLightbulb,
-    title: "Support Our Ministry",
-    desc: "Your contribution helps us reach more lives with God’s Word through study groups, devotional materials, and outreach programs. Together, we can continue to spread light and hope through Christ-centered teaching.",
-    buttonText: "Contact us ",
-    isDark: false,
-    iconColor: goldColor,
-    buttonBg: goldColor,
-    buttonTextDark: 'text-gray-900',
-    buttonHoverBg: blueColor,
-    buttonHoverText: 'text-white'
-  },
-  {
-    icon: FaRegClock,
-    title: "Volunteer in Outreach",
-    desc: "Offer your time and talents to serve others—whether it’s helping with events, leading prayer, mentoring youth, or assisting in devotional sessions. Every act of service brings glory to God and builds His kingdom.",
-    buttonText: "Contact us ",
-    isDark: false,
-    iconColor: goldColor,
-    buttonBorderColor: blueColor,
-    buttonHoverBg: blueColor,
-    buttonHoverText: 'text-white'
-  },
-];
+        {
+            icon: FaRegCircle,
+            title: "Join a Discipleship Group",
+            desc: "Be a part of a growing community of believers learning obedience, discipline, and faith in Christ together. Walk alongside others seeking to strengthen their relationship with God and live out His Word daily.",
+            buttonText: "Contact us ",
+            isDark: false,
+            iconColor: goldColor,
+            buttonBorderColor: blueColor,
+            buttonHoverBg: blueColor,
+            buttonHoverText: 'text-white'
+        },
+        {
+            icon: FaRegLightbulb,
+            title: "Support Our Ministry",
+            desc: "Your contribution helps us reach more lives with God’s Word through study groups, devotional materials, and outreach programs. Together, we can continue to spread light and hope through Christ-centered teaching.",
+            buttonText: "Contact us ",
+            isDark: false,
+            iconColor: goldColor,
+            buttonBg: goldColor,
+            buttonTextDark: 'text-gray-900',
+            buttonHoverBg: blueColor,
+            buttonHoverText: 'text-white'
+        },
+        {
+            icon: FaRegClock,
+            title: "Volunteer in Outreach",
+            desc: "Offer your time and talents to serve others—whether it’s helping with events, leading prayer, mentoring youth, or assisting in devotional sessions. Every act of service brings glory to God and builds His kingdom.",
+            buttonText: "Contact us ",
+            isDark: false,
+            iconColor: goldColor,
+            buttonBorderColor: blueColor,
+            buttonHoverBg: blueColor,
+            buttonHoverText: 'text-white'
+        },
+    ];
 
 
     return (
@@ -71,8 +71,8 @@ const HelpUsSection = () => {
                         <div
                             key={index}
                             className={`p-8 rounded-xl transition-all duration-300 h-full flex flex-col ${option.isDark
-                                    ? 'bg-[#141722] text-white shadow-xl' // Dark card styling
-                                    : 'bg-gray-50 text-gray-900 shadow-md hover:shadow-lg' // Light card styling
+                                ? 'bg-[#141722] text-white shadow-xl' // Dark card styling
+                                : 'bg-gray-50 text-gray-900 shadow-md hover:shadow-lg' // Light card styling
                                 }`}
                         >
                             {/* Icon */}
@@ -91,33 +91,23 @@ const HelpUsSection = () => {
                             </p>
 
                             {/* Button */}
-                              <a
-                  href="/contact">
-                            <button
+                            <a
+                                href="/contact"
                                 className={`text-sm cursor-pointer font-semibold mt-auto px-4 py-2 rounded-full border transition duration-300 self-start
-                                    ${option.isDark
-                                        ? `${option.buttonTextDark} border-transparent` // Dark card button with transparent border
-                                        : `text-gray-900 border-gray-900` // Light card button with dark border
+      ${option.isDark
+                                        ? `${option.buttonTextDark} border-transparent`
+                                        : `text-gray-900 border-gray-900`
                                     }
-                                    ${option.isDark ? `bg-[${option.buttonBg}]` : ''}
-                                    ${option.isDark ? `hover:bg-[${option.buttonHoverBg}] hover:${option.buttonHoverText}` : `hover:bg-[${option.buttonHoverBg}] hover:${option.buttonHoverText}`}
-                                    `}
-                                // Manually apply style for dynamic colors for now, Tailwind JIT can be tricky with string interpolation inside template literals directly for colors.
-                                // For a more robust solution, use Tailwind config or ensure dynamic classes are fully formed strings.
-                                style={option.isDark
-                                    ? { backgroundColor: option.buttonBg, borderColor: option.buttonBg, color: '#141722' }
-                                    : { borderColor: option.buttonBorderColor, color: '#141722' }
+  `}
+                                style={
+                                    option.isDark
+                                        ? { backgroundColor: option.buttonBg, borderColor: option.buttonBg, color: '#141722' }
+                                        : { borderColor: option.buttonBorderColor, color: '#141722' }
                                 }
                                 onMouseEnter={(e) => {
-                                    if (option.isDark) {
-                                        e.currentTarget.style.backgroundColor = blueColor;
-                                        e.currentTarget.style.borderColor = blueColor;
-                                        e.currentTarget.style.color = 'white';
-                                    } else {
-                                        e.currentTarget.style.backgroundColor = blueColor;
-                                        e.currentTarget.style.borderColor = blueColor;
-                                        e.currentTarget.style.color = 'white';
-                                    }
+                                    e.currentTarget.style.backgroundColor = blueColor;
+                                    e.currentTarget.style.borderColor = blueColor;
+                                    e.currentTarget.style.color = 'white';
                                 }}
                                 onMouseLeave={(e) => {
                                     if (option.isDark) {
@@ -132,8 +122,8 @@ const HelpUsSection = () => {
                                 }}
                             >
                                 {option.buttonText}
-                            </button>
                             </a>
+
                         </div>
                     ))}
                 </div>
