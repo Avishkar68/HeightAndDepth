@@ -5,7 +5,7 @@ import OurStories from '../sections/OurStory'
 import Stats from '../sections/Stats'
 import Testimonials from '../sections/Testimonials'
 import HelpUsSection from '../sections/HelpUsSection'
-import UpComingEvents from '../sections/UpComingEvents'
+import UpComingEvents from '../sections/UpComingEvents.jsx'
 
 const Home = () => {
   return (
