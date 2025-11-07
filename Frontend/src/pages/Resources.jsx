@@ -305,7 +305,7 @@ const Resources = () => {
             <h3 className="text-3xl font-bold">Our Identity in Christ</h3>
             <button
               onClick={handleDownloadPDF}
-              className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+              className="bg-[#FFAA4C] hidden md:block cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
             >
               Download Declaration
             </button>
@@ -352,6 +352,12 @@ const Resources = () => {
                 ))}
               </ul>
             </div>
+              <button
+              onClick={handleDownloadPDF}
+              className="bg-[#FFAA4C] md:hidden cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+            >
+              Download Declaration
+            </button>
           </div>
         </div>
 

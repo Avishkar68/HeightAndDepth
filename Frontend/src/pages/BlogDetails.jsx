@@ -28,7 +28,7 @@ const BlogDetails = () => {
   }
 
   return (
-    <section className="pt-28 pb-20 px-6 md:px-20 bg-white min-h-screen text-gray-900">
+    <section className="pt-10 md:pt-28 pb-20 px-6 md:px-20 bg-white min-h-screen text-gray-900">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
