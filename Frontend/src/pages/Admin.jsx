@@ -3,7 +3,7 @@ import axios from "axios";
 import AdminContactSubmissions from "../components/AdminContactSubmissions.jsx";
 
 // 🚨 NOTE: Updated port to 5000 to match backend script.js
-const API_URL = "http://localhost:3000/api/testimonials"; 
+const API_URL = "https://heightanddepth.onrender.com/api/testimonials"; 
 
 // --- Constants for colors and tab names ---
 const blueColor = '#22ABDF';

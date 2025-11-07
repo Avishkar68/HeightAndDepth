@@ -2,7 +2,7 @@ import React, { useState } from "react"; // 👈 UPDATED: Added useState
 import axios from "axios";             // 👈 NEW: Import axios
 
 // 🚨 NOTE: Updated port to 5000 to match backend script.js
-const API_URL_CONTACT = "http://localhost:3000/api/contact";
+const API_URL_CONTACT = "https://heightanddepth.onrender.com/api/contact";
 
 const Contact = () => {
   const goldColor = '#FFAA4C';

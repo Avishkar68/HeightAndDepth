@@ -12,7 +12,7 @@ export default function Testimonials() {
     const fetchTestimonials = async () => {
       try {
         // Fetch data from the running backend server
-        const response = await axios.get("http://localhost:3000/api/testimonials");
+        const response = await axios.get("https://heightanddepth.onrender.com/api/testimonials");
         setTestimonials(response.data);
         setLoading(false);
       } catch (err) {
