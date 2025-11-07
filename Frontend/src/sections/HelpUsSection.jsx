@@ -91,6 +91,8 @@ const HelpUsSection = () => {
                             </p>
 
                             {/* Button */}
+                              <a
+                  href="/contact">
                             <button
                                 className={`text-sm cursor-pointer font-semibold mt-auto px-4 py-2 rounded-full border transition duration-300 self-start
                                     ${option.isDark
@@ -131,6 +133,7 @@ const HelpUsSection = () => {
                             >
                                 {option.buttonText}
                             </button>
+                            </a>
                         </div>
                     ))}
                 </div>

@@ -51,9 +51,13 @@ const UpComingEvents = () => {
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
                 {event.description}
               </p>
-              <button className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition">
-                {event.buttonText}
-              </button>
+              <a
+                href="/contact">
+                <button className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition">
+
+                  {event.buttonText}
+                </button>
+              </a>
             </div>
           ))}
         </div>
