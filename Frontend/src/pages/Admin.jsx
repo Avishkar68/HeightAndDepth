@@ -215,6 +215,15 @@ const AdminTestimonials = () => {
   const [listLoading, setListLoading] = useState(true); 
   
   const [feedback, setFeedback] = useState("");
+  useEffect(() => {
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }, 50);
+}, []);
+
 
   // Function to fetch testimonials (called on mount and after actions)
   const fetchTestimonials = async () => {
@@ -239,7 +248,9 @@ const AdminTestimonials = () => {
     // Clear feedback when tab changes
     setFeedback(""); 
   }, [selectedTab]); 
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   // Handler for adding a new testimonial with file upload
   const handleAddSubmit = async (e) => {
     e.preventDefault();
@@ -304,7 +315,8 @@ const AdminTestimonials = () => {
 
   // --- Main Render ---
   return (
-    <div className="flex justify-center min-h-screen">
+    <div className="flex flex-col justify-start min-h-screen">
+
 
     <div className="p-8 w-[1200px] max-w-full">
       <h1 

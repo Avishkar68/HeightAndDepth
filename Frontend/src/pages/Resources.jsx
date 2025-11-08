@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { jsPDF } from "jspdf";
 import res from "../assets/resources1.png"; // Assuming this is a general resource image
 // IMPORT YOUR BOOK ASSETS HERE
@@ -10,6 +10,9 @@ import whoarewe from "../assets/whoarewe.jpg";
 // Note: Replace the above paths with your actual asset file names and extensions.
 
 const Resources = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   const [showModal, setShowModal] = useState(false);
   const [currentPdfUrl, setCurrentPdfUrl] = useState("");
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../sections/Hero'
 import WhatWeDo from '../sections/WhatWeDo'
 import OurStories from '../sections/OurStory'
@@ -8,6 +8,9 @@ import HelpUsSection from '../sections/HelpUsSection'
 import UpComingEvents from '../sections/UpComingEvents.jsx'
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   return (
     <div className='overflow-hidden'>
       <Hero/>

@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // 👈 UPDATED: Added useState
+import React, { useEffect, useState } from "react"; // 👈 UPDATED: Added useState
 import axios from "axios";             // 👈 NEW: Import axios
 
 // 🚨 NOTE: Updated port to 5000 to match backend script.js
@@ -7,7 +7,9 @@ const API_URL_CONTACT = "https://heightanddepth.onrender.com/api/contact";
 const Contact = () => {
   const goldColor = '#FFAA4C';
   const blueColor = '#22ABDF';
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   // 👈 NEW: State for form fields and submission status
   const [formData, setFormData] = useState({
     name: '',

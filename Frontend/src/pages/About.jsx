@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import abt1 from "../assets/aboutPic.jpg"
 import teamMember1 from "../assets/teamMember1.jpg"
 import teamMember2 from "../assets/teamMember2.jpg"
 
 const About = () => {
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   const goldColor = '#FFAA4C';
   const blueColor = '#22ABDF';
 
