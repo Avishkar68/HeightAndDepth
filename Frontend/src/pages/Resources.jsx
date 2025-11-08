@@ -12,7 +12,7 @@ import whoarewe from "../assets/whoarewe.jpg";
 const Resources = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-}, []);
+  }, []);
   const [showModal, setShowModal] = useState(false);
   const [currentPdfUrl, setCurrentPdfUrl] = useState("");
 
@@ -31,11 +31,10 @@ const Resources = () => {
     {
       name: "Living the Blessed Life",
       cover: book2Cover,
-      pdf: book1PDF,
-      downloadName: "Living_the_Blessed_Life.pdf",
+      link: "https://www.awmi.net/study-guides/?id=417",
     },
-    // Add more books here
   ];
+
 
   const identityDeclarations = [
     // ... (Your existing array)
@@ -315,7 +314,7 @@ const Resources = () => {
           </div>
 
           {/* FLEX CONTAINER */}
-<div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             {/* IMAGE SIDE */}
             <div className="w-full md:w-1/2">
               <img
@@ -355,7 +354,7 @@ const Resources = () => {
                 ))}
               </ul>
             </div>
-              <button
+            <button
               onClick={handleDownloadPDF}
               className="bg-[#FFAA4C] md:hidden cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
             >
@@ -382,7 +381,7 @@ const Resources = () => {
               >
                 <div
                   className="w-40 h-56 cursor-pointer rounded-lg overflow-hidden shadow-lg mb-4"
-                  // onClick={() => handleViewPDF(book.pdf)}
+                // onClick={() => handleViewPDF(book.pdf)}
                 >
                   <img
                     src={book.cover}
@@ -393,14 +392,25 @@ const Resources = () => {
                 <p className="text-lg font-bold text-gray-900 text-center mb-3">
                   {book.name}
                 </p>
-                <a
-                  href="https://www.awmi.net/study-guides/?id=417"
-                  target="_blank"
-                  // download={book.downloadName}
-                  className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
-                >
-                  Download Book
-                </a>
+                {book.pdf ? (
+                  <a
+                    href={book.pdf}
+                    download={book.downloadName}
+                    className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+                  >
+                    Download Book
+                  </a>
+                ) : (
+                  <a
+                    href={book.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+                  >
+                    Open Book
+                  </a>
+                )}
+
               </div>
             ))}
           </div>
