@@ -96,7 +96,7 @@ const Resources = () => {
     doc.setFont("times", "italic");
     doc.setFontSize(12);
     doc.text(
-      "“Death and life are in the power of the tongue; and those who love it will eat its fruit.”",
+      `DEATH AND LIFE ARE IN THE POWER OF THE TONGUE; AND THOSE WHO LOVE IT WILL EAT ITS FRUIT.`,
       40,
       120,
       { maxWidth: 520 }
@@ -237,8 +237,8 @@ const Resources = () => {
           </h2>
           <div className="pt-6">
             <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-snug">
-              DEATH AND LIFE ARE IN THE POWER OF THE TONGUE; AND THOSE WHO LOVE
-              IT WILL EAT ITS FRUIT.
+              DEATH AND LIFE ARE IN THE POWER OF THE TONGUE;<br />
+              AND THOSE WHO LOVE IT WILL EAT ITS FRUIT.
             </p>
             <p
               className="text-lg font-medium mt-2"

@@ -57,11 +57,11 @@ const HelpUsSection = () => {
                 {/* Section Header */}
                 <div className="mb-12 flex flex-col justify-center items-center gap-6">
                     <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center" style={{ color: blueColor }}>
-                        YOU can make a difference!
+                    JOIN THE JOURNEY. BE A MINISTER OF HIS GRACE
                     </h2>
 
                     <p className="text-gray-600 text-center max-w-[720px] mx-auto text-[20px] mt-4 leading-[28px]">
-                        Every action counts. Find out how you can donate, volunteer, or advocate to support our fight for justice and dignity.
+                    Discover how you can help advance the mission of discipleship by joining one of our online or onsite programs—equipping hearts, transforming lives, and growing together in Christ."
                     </p>
                 </div>
 
