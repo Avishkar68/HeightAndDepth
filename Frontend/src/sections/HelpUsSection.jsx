@@ -39,7 +39,7 @@ const HelpUsSection = () => {
         },
         {
             icon: FaRegClock,
-            title: "Volunteer in Outreach",
+            title: "Be A Discipler",
             desc: "Offer your time and talents to serve others—whether it’s helping with events, leading prayer, mentoring youth, or assisting in devotional sessions. Every act of service brings glory to God and builds His kingdom.",
             buttonText: "Contact us ",
             isDark: false,

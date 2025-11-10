@@ -21,7 +21,7 @@ const UpComingEvents = () => {
       date: "Mondays and Wednesdays w.e.f 2026 – virtual discipleship studies.",
       description:
         "",
-      buttonText: "Volunteer",
+      buttonText: "Get Connected",
     },
   ];
 

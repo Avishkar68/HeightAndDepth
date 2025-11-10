@@ -422,7 +422,7 @@ const Resources = () => {
             className="text-xl md:text-2xl font-semibold leading-relaxed"
             style={{ color: redColor }}
           >
-            Heights and Depths Ministry walks the journey with you to be deeply
+            Height and Depth Ministry walks the journey with you to be deeply
             grounded in God's great love so you can experience the heights of
             His blessing in every area of your life.
           </p>
