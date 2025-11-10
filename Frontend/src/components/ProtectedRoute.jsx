@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-const ADMIN_PASSWORD = "admin123"; // 🚨 CHANGE THIS TO A REAL SECRET! 🚨
+const ADMIN_PASSWORD = "Blessed@1"; 
 
 const ProtectedRoute = () => {
   const [password, setPassword] = useState('');
