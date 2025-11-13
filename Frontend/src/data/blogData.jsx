@@ -15,7 +15,7 @@ export const blogPosts = [
 To trust in the Lord is to place our full confidence in His character—His reliability, truth, and power—even when life feels uncertain. It’s more than acknowledging that God exists; it’s surrendering every part of our lives to His loving authority.
 When we choose to rely on His wisdom instead of our own understanding, He faithfully directs our steps. We were never meant to navigate life alone. God invites us to lean into His strength, His love, and His guidance—giving Him control over our journey rather than trying to map it out ourselves.
 As we walk in trust, peace becomes our compass. Not the absence of problems, but the presence of God’s assurance. In every decision, every detour, and every delay, His peace confirms that we’re walking in step with Him.
-Would you like a visual version of this for your website or a printable devotional card? I can help with that too.
+
 -	By Ms. Regina Flanery
 
     `,
