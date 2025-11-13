@@ -12,7 +12,7 @@ export default function Testimonials() {
     const fetchTestimonials = async () => {
       try {
         // Fetch data from the running backend server
-        const response = await axios.get("http://localhost:3000/api/testimonials");
+        const response = await axios.get("https://heightanddepth.onrender.com/api/testimonials");
         setTestimonials(response.data);
         setLoading(false);
       } catch (err) {
@@ -44,9 +44,9 @@ export default function Testimonials() {
   
   return (
     <div className="w-screen bg-[#EEF6FF] py-16">
-      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center">What our community say</h1>
+      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-center">VOICES OF TRANSFORMED LIVES</h1>
       <p className="text-gray-600 max-w-[720px] text-center mx-auto text-[20px] mt-4 leading-[28px]">
-      Unfiltered testimonials and authentic gratitude. These voices are the true measure of our success in advocating for dignity, equality, and lasting reform.
+      Unfiltered testimonies and heartfelt praise—these voices reflect the true fruit of our discipleship journey. Every individual a witness to God’s transforming grace at work—shaped by His Word.
           </p>
       <AnimatedTestimonials testimonials={testimonials} />
     </div>

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios"; 
 
 // 🚨 NOTE: Using port 5000 to match the updated backend script.js
-const API_URL_SUBMISSIONS = "http://localhost:3000/api/contact/submissions";
-const API_URL_EXPORT = "http://localhost:3000/api/contact/export";
+const API_URL_SUBMISSIONS = "https://heightanddepth.onrender.com/api/contact/submissions";
+const API_URL_EXPORT = "https://heightanddepth.onrender.com/api/contact/export";
 
 const AdminContactSubmissions = ({ blueColor }) => {
   const [submissions, setSubmissions] = useState([]);

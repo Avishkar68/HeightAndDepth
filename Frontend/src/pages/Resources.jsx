@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { jsPDF } from "jspdf";
 import res from "../assets/resources1.png"; // Assuming this is a general resource image
 // IMPORT YOUR BOOK ASSETS HERE
@@ -10,6 +10,9 @@ import whoarewe from "../assets/whoarewe.jpg";
 // Note: Replace the above paths with your actual asset file names and extensions.
 
 const Resources = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const [showModal, setShowModal] = useState(false);
   const [currentPdfUrl, setCurrentPdfUrl] = useState("");
 
@@ -28,11 +31,10 @@ const Resources = () => {
     {
       name: "Living the Blessed Life",
       cover: book2Cover,
-      pdf: book1PDF,
-      downloadName: "Living_the_Blessed_Life.pdf",
+      link: "https://www.awmi.net/study-guides/?id=417",
     },
-    // Add more books here
   ];
+
 
   const identityDeclarations = [
     // ... (Your existing array)
@@ -94,7 +96,7 @@ const Resources = () => {
     doc.setFont("times", "italic");
     doc.setFontSize(12);
     doc.text(
-      "“Death and life are in the power of the tongue; and those who love it will eat its fruit.”",
+      `DEATH AND LIFE ARE IN THE POWER OF THE TONGUE; AND THOSE WHO LOVE IT WILL EAT ITS FRUIT.`,
       40,
       120,
       { maxWidth: 520 }
@@ -235,8 +237,8 @@ const Resources = () => {
           </h2>
           <div className="pt-6">
             <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-snug">
-              DEATH AND LIFE ARE IN THE POWER OF THE TONGUE; AND THOSE WHO LOVE
-              IT WILL EAT ITS FRUIT.
+              DEATH AND LIFE ARE IN THE POWER OF THE TONGUE;<br />
+              AND THOSE WHO LOVE IT WILL EAT ITS FRUIT.
             </p>
             <p
               className="text-lg font-medium mt-2"
@@ -305,14 +307,14 @@ const Resources = () => {
             <h3 className="text-3xl font-bold">Our Identity in Christ</h3>
             <button
               onClick={handleDownloadPDF}
-              className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+              className="bg-[#FFAA4C] hidden md:block cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
             >
               Download Declaration
             </button>
           </div>
 
           {/* FLEX CONTAINER */}
-<div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             {/* IMAGE SIDE */}
             <div className="w-full md:w-1/2">
               <img
@@ -352,6 +354,12 @@ const Resources = () => {
                 ))}
               </ul>
             </div>
+            <button
+              onClick={handleDownloadPDF}
+              className="bg-[#FFAA4C] md:hidden cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+            >
+              Download Declaration
+            </button>
           </div>
         </div>
 
@@ -373,7 +381,7 @@ const Resources = () => {
               >
                 <div
                   className="w-40 h-56 cursor-pointer rounded-lg overflow-hidden shadow-lg mb-4"
-                  // onClick={() => handleViewPDF(book.pdf)}
+                // onClick={() => handleViewPDF(book.pdf)}
                 >
                   <img
                     src={book.cover}
@@ -384,14 +392,25 @@ const Resources = () => {
                 <p className="text-lg font-bold text-gray-900 text-center mb-3">
                   {book.name}
                 </p>
-                <a
-                  href="https://www.awmi.net/study-guides/?id=417"
-                  target="_blank"
-                  // download={book.downloadName}
-                  className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
-                >
-                  Download Book
-                </a>
+                {book.pdf ? (
+                  <a
+                    href={book.pdf}
+                    download={book.downloadName}
+                    className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+                  >
+                    Download Book
+                  </a>
+                ) : (
+                  <a
+                    href={book.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#FFAA4C] cursor-pointer hover:bg-[#e69b3f] text-white px-5 py-2 rounded-lg font-semibold transition-all"
+                  >
+                    Open Book
+                  </a>
+                )}
+
               </div>
             ))}
           </div>
@@ -403,7 +422,7 @@ const Resources = () => {
             className="text-xl md:text-2xl font-semibold leading-relaxed"
             style={{ color: redColor }}
           >
-            Heights and Depths Ministry walks the journey with you to be deeply
+            Height and Depth Ministry walks the journey with you to be deeply
             grounded in God's great love so you can experience the heights of
             His blessing in every area of your life.
           </p>

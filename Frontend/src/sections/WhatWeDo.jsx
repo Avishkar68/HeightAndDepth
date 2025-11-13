@@ -213,7 +213,7 @@ const WhatWeDo = () => {
         What we do
       </h1>
       <p className="text-gray-600 max-w-[720px] mx-auto text-[18px] sm:text-[20px] text-center leading-[28px] px-4">
-        Faith, obedience, and discipline — read how our community learns to walk closer with Christ every day.
+        Faith, obedience, and disciple — read how our community learns to walk closer with Christ every day.
       </p>
 
       {/* ✅ DESKTOP: Horizontal GSAP Section */}

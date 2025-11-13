@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-const ADMIN_PASSWORD = "admin123"; // 🚨 CHANGE THIS TO A REAL SECRET! 🚨
+const ADMIN_PASSWORD = "Blessed@1"; 
 
 const ProtectedRoute = () => {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false); 
   const [error, setError] = useState('');
-  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   // Define a dummy/placeholder element to match your brand style if needed
   const blueColor = '#22ABDF';
 

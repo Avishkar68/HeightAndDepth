@@ -6,7 +6,9 @@ import { FaArrowLeft } from "react-icons/fa6";
 const BlogDetails = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   const post = blogPosts.find((p) => p.slug === slug);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ const BlogDetails = () => {
   }
 
   return (
-    <section className="pt-28 pb-20 px-6 md:px-20 bg-white min-h-screen text-gray-900">
+    <section className="pt-10 md:pt-28 pb-20 px-6 md:px-20 bg-white min-h-screen text-gray-900">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}

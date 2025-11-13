@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import abt1 from "../assets/aboutPic.jpg"
 import teamMember1 from "../assets/teamMember1.jpg"
 import teamMember2 from "../assets/teamMember2.jpg"
 
 const About = () => {
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   const goldColor = '#FFAA4C';
   const blueColor = '#22ABDF';
 
@@ -78,7 +80,7 @@ const About = () => {
           <p className="text-gray-700 mb-2 text-[18px] leading-[24px]">Email: <a href="mailto:heightanddepthministries@gmail.com" style={{ color: goldColor }} className="hover:underline">heightanddepthministries@gmail.com</a></p>
           <p className="text-gray-700 mb-2 text-[18px] leading-[24px]">Website: <a href="https://www.heightanddepthministries.co.in" style={{ color: goldColor }} className="hover:underline">www.heightanddepthministries.co.in</a></p>
           <p className="text-gray-700 mb-2 text-[18px] leading-[24px]">Phone (India): +91 98606 67533</p>
-          <p className="text-gray-700 mb-2 text-[18px] leading-[24px]">Phone (USA): +1 903 278-1851</p>
+          <p className="text-gray-700 mb-2 text-[18px] leading-[24px]">Phone (USA): +1 (903) 278-1851</p>
         </div>
       </div>
 

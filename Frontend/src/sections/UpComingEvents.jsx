@@ -3,25 +3,25 @@ import React from "react";
 const UpComingEvents = () => {
   const events = [
     {
-      title: "Discipleship Workshop: Walking in Obedience",
-      date: "November 15, 2025",
+      title: "Youth Discipleship Workshop",
+      date: "Alternate Saturdays every month",
       description:
-        "Join us for an interactive session on spiritual discipline, faith, and obedience to God’s Word — a journey toward deeper relationship with Christ.",
+        "",
       buttonText: "Learn More",
     },
     {
-      title: "Community Prayer & Worship Night",
-      date: "November 28, 2025",
+      title: "Grow in Faith, One Chapter at a Time",
+      date: "online Book study 2026",
       description:
-        "An evening of worship, testimonies, and heartfelt prayer. Come experience God’s presence as we lift our voices together in unity.",
+        "",
       buttonText: "Join Us",
     },
     {
-      title: "Faith in Action: Outreach Sunday",
-      date: "December 10, 2025",
+      title: "Building Disciples Beyond Borders",
+      date: "Mondays and Wednesdays w.e.f 2026 – virtual discipleship studies.",
       description:
-        "Be the hands and feet of Christ! Volunteer in our outreach to local communities and share the love of Jesus through service.",
-      buttonText: "Volunteer",
+        "",
+      buttonText: "Get Connected",
     },
   ];
 
@@ -51,9 +51,12 @@ const UpComingEvents = () => {
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
                 {event.description}
               </p>
-              <button className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition">
+              <a
+                href="/contact"
+                className="border cursor-pointer border-blue-400 px-5 py-2 rounded-full text-sm text-blue-200 hover:bg-blue-400 hover:text-white transition"
+              >
                 {event.buttonText}
-              </button>
+              </a>
             </div>
           ))}
         </div>

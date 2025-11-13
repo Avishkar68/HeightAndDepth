@@ -29,11 +29,11 @@ export const ParallaxScroll = ({
     <div
       className={cn("h-screen items-start overflow-y-auto w-full", className)}
       ref={gridRef}>
-        
+
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-10 px-10"
         ref={gridRef}>
-            
+
         <div className="grid gap-10">
           {firstPart.map((el, idx) => (
             <motion.div
@@ -42,10 +42,10 @@ export const ParallaxScroll = ({
               key={"grid-1" + idx}>
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
-                alt="thumbnail" />
+                className="w-auto h-auto max-w-full rounded-lg !m-0 !p-0"
+                alt="thumbnail"
+              />
+
             </motion.div>
           ))}
         </div>
@@ -54,10 +54,10 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
-                alt="thumbnail" />
+                className="w-auto h-auto max-w-full rounded-lg !m-0 !p-0"
+                alt="thumbnail"
+              />
+
             </motion.div>
           ))}
         </div>
@@ -66,10 +66,10 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
-                alt="thumbnail" />
+                className="w-auto h-auto max-w-full rounded-lg !m-0 !p-0"
+                alt="thumbnail"
+              />
+
             </motion.div>
           ))}
         </div>

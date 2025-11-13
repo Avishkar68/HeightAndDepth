@@ -30,7 +30,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-[90vh] md:h-[80vh] bg-white">
+    <div className="flex justify-center items-center h-[100vh] md:h-[80vh] bg-white">
       {/* Outer Animated Container */}
       <div
         ref={containerRef}
@@ -38,7 +38,7 @@ const Stats = () => {
       >
         {/* Heading */}
         <h2 className="leading-snug mb-12 text-3xl md:text-5xl font-bold tracking-tight">
-          Growing Together in Faith & Discipline
+          Growing Together in Faith & Discipleship
         </h2>
 
         {/* Stats Row */}
@@ -47,7 +47,7 @@ const Stats = () => {
           <div>
             <p className="text-5xl font-bold text-blue-300">30+</p>
             <p className="text-sm mt-2 text-gray-400">
-              Lives touched through our <br /> devotional & discipline sessions
+              Lives touched through our <br /> devotional & discipleship program
             </p>
           </div>
 

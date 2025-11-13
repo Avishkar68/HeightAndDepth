@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ParallaxScrollDemo } from '../components/ParallaxScrollDemo'
 
 const Gallery = () => {
   const blueColor = '#22ABDF';
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
   return (
     <div className='w-screen flex flex-col justify-center items-center'>
      
